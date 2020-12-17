@@ -2,8 +2,17 @@ const numberOfFilms = +prompt("Сколько фильмов вы уже пос�
 
 
 const personalMovieDB = {
-        count: numberOfFilms,
-        movies: {},
-        actors: {},
-        genres: [],
-        privat: false,
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
+
+const a = prompt("Один из последних просмотренных фильмов?", ""),
+    b = prompt("Как оцените его?", ""),
+    c = prompt("Один из последних просмотренных фильмов?", ""),
+    d = prompt("Как оцените его?", "");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
